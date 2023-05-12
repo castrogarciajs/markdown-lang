@@ -1,3 +1,6 @@
-fn main() {
-    println!("Hello, world!");
+use salvo::prealude::*
+
+#[handler]
+async fn hello() -> &'static str {
+    "Hola, Mundo!"
 }
